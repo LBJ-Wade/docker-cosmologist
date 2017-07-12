@@ -18,8 +18,9 @@ do
 Navigating into /virtual/path in the bash shell, you can then run make etc as normal, acting
 on your local files.
 
-Start a Jupyter Notebook server with
+Host a virtual Jupyter Notebook server that you can then use from your local machine using
 
-    docker run -v /local/notebook/path:/notebooks i -t -p 8888:8888 cmbant/cosmologist -c "/opt/conda/bin/jupyter notebook --notebook-dir=/notebooks --ip='*' --port=8888 --no-browser"
+    docker run -v /local/notebook/path:/notebooks -i -t -p 8888:8888 cmbant/cosmologist /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/notebooks --allow-root --ip='*' --port=8888 --no-browser"
+    
+and then view the by opening the URL it gives you, which will be under http://localhost:8888 in your browser, or http://<DOCKER-MACHINE-IP>:8888 if you are using a Docker Machine VM.
 
-and then view the by opening http://localhost:8888 in your browser, or http://<DOCKER-MACHINE-IP>:8888 if you are using a Docker Machine VM.
