@@ -2,7 +2,7 @@ FROM cmbant/cosmobox:latest
 
 MAINTAINER Antony Lewis
 
-RUN git clone --depth 10 git@github.com:cmbant/CAMB.git \
+RUN git clone --depth 10 https://github.com/cmbant/CAMB.git \
  && cd camb \
  && make \
  && cd pycamb \
