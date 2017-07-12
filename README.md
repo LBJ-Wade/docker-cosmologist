@@ -20,6 +20,6 @@ on your local files.
 
 Start a Jupyter Notebook server with
 
-    docker run -v /local/notebook/path:/notebooks i -t -p 8888:8888 cmbant/cosmologist /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/notebooks --ip='*' --port=8888 --no-browser"
+    docker run -v /local/notebook/path:/notebooks i -t -p 8888:8888 cmbant/cosmologist -c "/opt/conda/bin/jupyter notebook --notebook-dir=/notebooks --ip='*' --port=8888 --no-browser"
 
 and then view the by opening http://localhost:8888 in your browser, or http://<DOCKER-MACHINE-IP>:8888 if you are using a Docker Machine VM.
