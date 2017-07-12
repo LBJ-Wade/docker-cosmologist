@@ -3,7 +3,7 @@ FROM cmbant/cosmobox:latest
 MAINTAINER Antony Lewis
 
 RUN git clone --depth 10 https://github.com/cmbant/CAMB.git \
- && cd camb \
+ && cd CAMB \
  && make \
  && cd pycamb \
  && python setup.py install \
