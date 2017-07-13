@@ -12,8 +12,8 @@ RUN git clone --depth 10 https://github.com/cmbant/CAMB.git \
 
 
 RUN conda install --yes jupyter astropy statsmodels \
-  && conda clean --yes -i -t -l -s -p
+  && pip install healpy starcluster \
+  && conda clean --yes -i -t -l -s -p && rm -Rf /root/.cache/pip 
 
-RUN pip install healpy starcluster && rm -Rf /root/.cache/pip
 
  

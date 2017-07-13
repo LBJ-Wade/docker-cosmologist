@@ -4,7 +4,7 @@ Docker with healpy, CAMB, astropy, latest gcc/gfortran, plus latex, miniconda py
 as needed for doing cosmology and running Jupyter notebooks. Builds on CosmoBox.
 
 
- GitHub: http://registry.hub.docker.com/u/cmbant/docker-cosmologist/
+ GitHub: https://github.com/cmbant/docker-cosmologist
  DockerHub: http://registry.hub.docker.com/u/cmbant/cosmologist/
 
 
